@@ -93,6 +93,13 @@ br {
 #buttons input {
 	width: 10em;
 }
+#payment_method label {
+    float: none;
+}
+#payment_method input[type="radio"] {
+    width: auto;
+    margin-left: 3em;
+}
 /* the styles for the navigation menu */
 #nav_menu ul {
 	list-style-type: none;
