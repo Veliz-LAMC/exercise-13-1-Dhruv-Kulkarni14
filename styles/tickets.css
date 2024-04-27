@@ -79,14 +79,6 @@ input:valid {
 input:invalid {
 	box-shadow: none;
 }
-input:required, input[required], input:invalid {
-    border: 2px solid #800000; /* Required and invalid fields have a 2-pixel border with #800000 color */
-    color: #800000; /* Font color for required and invalid fields */
-}
-
-input:valid {
-    border: 1px solid black; /* Valid fields have a 1-pixel black border */
-}
 br {
     clear: both;
 }
