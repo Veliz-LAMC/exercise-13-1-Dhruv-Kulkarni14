@@ -47,12 +47,12 @@ header img {
 }
 /* the styles for the form */
 fieldset {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-top: .5em;
+    margin-top: 0; /* No top margin */
+    margin-bottom: .5em;
+    padding: .5em 1em; /* Top and bottom padding .5em, right and left padding 1em */
 }
 legend {
-    color: #931420;
+    color: black; /* Changing text color to black */
     font-weight: bold;
     font-size: 85%;
     margin-bottom: .5em;
@@ -78,6 +78,14 @@ input:valid {
 }
 input:invalid {
 	box-shadow: none;
+}
+input:required, input[required], input:invalid {
+    border: 2px solid #800000; /* Required and invalid fields have a 2-pixel border with #800000 color */
+    color: #800000; /* Font color for required and invalid fields */
+}
+
+input:valid {
+    border: 1px solid black; /* Valid fields have a 1-pixel black border */
 }
 br {
     clear: both;
